@@ -1,0 +1,125 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-color: rgb(23, 23, 23);
+   
+   background-image: url(../assets/fundo4.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+header img {
+   width: 100%;
+}
+
+header nav {
+   position: absolute;
+   padding: 10px;
+   padding-left: 30px;
+}
+
+header nav ul {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+}
+
+header li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bolder;
+}
+
+
+main {
+   display: block;
+   margin: auto;
+   max-width: 1100px;
+   padding: 50px;
+   padding-top: 100px;
+   gap: 30px;
+   color: rgb(223, 223, 223);
+}
+
+section {
+   margin-bottom: 80px;
+}
+
+.principal h1 {
+   font-size: 2.5em;
+   text-align: center;
+}
+
+.principal h2 {
+   text-align: center;
+   font-weight: normal;
+}
+
+.linkloja {
+   display: flex;
+
+   .linkimage {
+      width: 100%;
+   }
+
+   .linkimage img {
+      width: 100%;
+      border-radius: 10px;
+   }
+}
+
+.linkloja .conteudo {
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   padding-right: 30px;
+}
+
+.linkloja .conteudo a {
+   background-color: rgb(220, 0, 0);
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bolder;
+   text-align: center;
+   padding: 8px;
+   border-radius: 5px;
+   transition: all .3s;
+
+   &:hover {
+      background-color: rgb(150, 0, 0);
+      transform: scale(1.01);
+   }
+}
+
+.sobrenos img {
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 30px;
+}
+
+.sobrenos h2 {
+   margin-bottom: 40px;
+}
+
+.sobrenos p {
+   margin-bottom: 20px;
+   padding: 0 30px;
+}
+
+.sobrenos a {
+   color: white;
+   font-weight: bolder;
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

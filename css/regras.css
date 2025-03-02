@@ -1,0 +1,15 @@
+span {
+   background-color: rgb(220, 0, 0);
+   width: 100%;
+   font-size: 2em;
+   font-weight: bolder;
+   display: block;
+   text-align: center;
+   margin-top: 20px;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+span a {
+   color: white;
+}
