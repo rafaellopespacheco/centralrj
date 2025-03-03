@@ -5,11 +5,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Central RJ</title>
       <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       <link rel="stylesheet" href="css/global.css" />
    </head>
    <body>
       <header>
-         <img src="assets/banner.png" alt="" />
+         <picture>
+         <source srcset="assets/bannercropped.png" media="(max-width: 768px)">
+         <img src="assets/banner.png" alt="Banner">
+</picture>
+
          <nav>
             <ul>
                <li><a href="index.html">Início</a></li>
@@ -22,8 +27,32 @@
          <section class="principal">
             <h1>Central RJ</h1>
             <h2>Seja bem-vindo ao melhor servidor de FiveM</h2>
+            <section class="cards">
+               <aside data-aos="flip-left" data-aos-duration="1000">
+                  <a href="https://discord.gg/t5kSGmuT6S" target="_blank"
+                     ><img src="assets/banenrdiscord.png"
+                  /></a>
+               </aside>
+               <aside
+                  class="principal"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1000"
+               >
+                  <a href="#sobrenos"
+                     ><img src="assets/sejabemvindobanner.png"
+                  /></a>
+               </aside>
+               <aside data-aos="flip-right" data-aos-duration="1000">
+                  <a
+                     href="https://www.tiktok.com/@central.rj?_t=ZM-8uHnvUPIh1S&_r=1"
+                     target="_blank"
+                     ><img src="assets/bannertiktok.png"
+                  /></a>
+               </aside>
+            </section>
          </section>
-         <section class="linkloja">
+         <section class="linkloja" data-aos="fade-up" data-aos-duration="1000">
             <div class="conteudo">
                <h2>Loja</h2>
                <p>
@@ -37,17 +66,25 @@
                </p>
                <a href="loja.html">Acessar Loja</a>
             </div>
-            <a href="loja.html" class="linkimage"><img src="assets/bannerloja.png" alt=""/></a>
+            <a href="loja.html" class="linkimage"
+               ><img src="assets/bannerloja.png" alt=""
+            /></a>
          </section>
-         <section class="sobrenos">
-            <img src="assets/bannersobrenos.png" alt="sobre nos">
+         <section
+            class="sobrenos"
+            id="sobrenos"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+         >
+            <img src="assets/bannersobrenos.png" alt="sobre nos" />
             <p>
-               Bem-vindo ao <b>Central RJ</b>, um servidor de <a href="https://fivem.net/" target="_blank">FiveM</a> criado para
-               proporcionar a melhor experiência de roleplay e diversão para
-               nossa comunidade! Estamos desenvolvendo um ambiente imersivo,
-               realista e inovador, onde os jogadores podem explorar uma cidade
-               dinâmica, criar suas próprias histórias e viver aventuras
-               inesquecíveis.
+               Bem-vindo ao <b>Central RJ</b>, um servidor de
+               <a href="https://fivem.net/" target="_blank">FiveM</a> criado
+               para proporcionar a melhor experiência de roleplay e diversão
+               para nossa comunidade! Estamos desenvolvendo um ambiente
+               imersivo, realista e inovador, onde os jogadores podem explorar
+               uma cidade dinâmica, criar suas próprias histórias e viver
+               aventuras inesquecíveis.
             </p>
             <p>
                Nosso time está focado em entregar um servidor equilibrado, com
@@ -66,5 +103,46 @@
             <p>Junte-se a nós e faça parte dessa jornada!</p>
          </section>
       </main>
+      <footer>
+         <h2>Central RJ</h2>
+         <aside>
+            <a
+               href="https://discord.gg/t5kSGmuT6S"
+               target="_blank"
+               data-aos="fade-right"
+               data-aos-delay="0"
+               data-aos-duration="1000"
+               ><img src="assets/discord.png"
+            /></a>
+            <a
+               href="https://www.tiktok.com/@central.rj"
+               target="_blank"
+               data-aos="fade-right"
+               data-aos-delay="200"
+               data-aos-duration="1000"
+               ><img src="assets/tiktok.png"
+            /></a>
+            <a
+               href=""
+               data-aos="fade-right"
+               data-aos-delay="400"
+               data-aos-duration="1000"
+               ><img src="assets/instagram.png"
+            /></a>
+            <a
+               href="loja.html"
+               target="_blank"
+               data-aos="fade-right"
+               data-aos-delay="600"
+               data-aos-duration="1000"
+               ><img src="assets/loja.png"
+            /></a>
+         </aside>
+         <p>&#169; Todos os direitos reservados.</p>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
    </body>
 </html>

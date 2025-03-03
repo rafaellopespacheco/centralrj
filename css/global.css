@@ -5,9 +5,13 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+
+   scroll-behavior: smooth;
+}
+
 body {
    background-color: rgb(23, 23, 23);
-   
    background-image: url(../assets/fundo4.jpg);
    background-size: cover;
    background-attachment: fixed;
@@ -18,7 +22,9 @@ header img {
 }
 
 header nav {
-   position: absolute;
+   display: flex;
+   justify-content: center;
+   text-align: center;
    padding: 10px;
    padding-left: 30px;
 }
@@ -33,6 +39,11 @@ header li a {
    color: white;
    text-decoration: none;
    font-weight: bolder;
+   transition: .3s;
+
+   &:hover {
+      color: rgb(220, 0, 0);
+   }
 }
 
 
@@ -58,6 +69,31 @@ section {
 .principal h2 {
    text-align: center;
    font-weight: normal;
+   margin-bottom: 40px;
+}
+
+.cards {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   img {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 300px;
+      transition: all .3s;
+      box-shadow: 0px 0px 0px red;
+
+      &:hover {
+         transform: scale(1.02);
+         box-shadow: 0px 0px 10px red;
+      }
+   }
+
+}
+
+.cards .principal img {
+   max-width: 350px;
 }
 
 .linkloja {
@@ -121,5 +157,50 @@ section {
 
    &:hover {
       text-decoration: underline;
+   }
+}
+
+footer {
+   color: white;
+   text-align: center;
+   padding-bottom: 40px;
+
+   aside {
+      display: flex;
+      justify-content: center;
+
+      img {
+         width: 60px;
+         transition: .3s;
+
+         &:hover {
+            transform: scale(1.07);
+         }
+      }
+   }
+}
+
+@media (max-width: 650px) {
+
+   main {
+      padding: 20px;
+   }
+
+   .principal .cards {
+      flex-direction: column;
+   }
+
+   .linkloja {
+      width: 100%;
+      flex-direction: column-reverse;
+
+      .conteudo {
+         width: 100%;
+         padding-right: 0px;
+      }
+   }
+
+   .sobrenos p {
+      padding: 0;
    }
 }
