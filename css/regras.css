@@ -1,15 +1,35 @@
-span {
-   background-color: rgb(220, 0, 0);
-   width: 100%;
-   font-size: 2em;
-   font-weight: bolder;
-   display: block;
+h1 {
    text-align: center;
-   margin-top: 20px;
-   border-radius: 5px;
-   padding: 10px;
+   font-size: 2em;
+   margin-bottom: 40px;
 }
 
-span a {
-   color: white;
+h2 {
+   text-align: center;
+   font-size: 1.5em;
+   margin-bottom: 10px;
+}
+
+h3 {
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+p {
+   margin-bottom: 10px;
+   line-height: 1.3em;
+}
+
+.vermelho {
+   color: red;
+   font-weight: bolder;
+}
+
+.verde {
+   color: green;
+   font-weight: bolder;
+}
+
+aside {
+   margin-bottom: 50px;
 }
